@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition</title>
+	<style>
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 900px;
+			margin: 10px auto;
+			border: 5px solid black;
+		}
+		.kotak {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			transition: 1s;
+		}
+
+		.kotak1 {
+			width: 100px;
+			height: 100px;
+			background-color: salmon;
+			transition: 3s;
+		}
+
+		.container:hover .kotak{
+			transform: rotate(720deg);
+			margin-left: 800px;
+			background-color: gold;
+		}
+
+		.container:hover .kotak1{
+			transform: rotate(180deg);
+			margin-left: 800px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	    <div class="kotak"></div>
+	    <div class="kotak1"></div>
+
+	</div>
+
+</body>
+</html>
+
+<!---tansition dapat mengubah nilai dari property Html secara halus
+
+yang membedakan transition dan animation hayalah keadaan awal dan keadaan akhirnya 
+
+animation keadaannya banyak
+
+transition: [property] <durasi> [fungsi] [delay];
+
+paramter property itu akan menentukan property mana saja yang akan dilakukan transisi, bisa satu atau lebih
+
+NAH klo property klo itu ada 3, ALL <nama property> none klo kita g diisi propertynya maka scr default akan terisi all
+
+Property yang dpt digunakan itu ada
+Background color              Top left bottom right
+Background position           Margin Padding
+Background size               Width Height
+Border                        Opacity
+Color                         Transform
+Filter                        Word-spacing
+Font-size                     letter-spacing
+Line-height
+
+non animatable properties
+font-family
+display
+position

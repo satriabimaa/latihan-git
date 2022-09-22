@@ -1,0 +1,44 @@
+body {
+	background-color: violet;
+    background-image: url(gambar/hybe.png);
+    background-repeat: repeat-x;
+}
+
+h1 {
+	font-variant: unset;
+	font-style: italic;
+	color: lightblue;
+}
+
+h2 {
+	color: white;
+	font-style: italic;
+	font-variant: small-caps;
+	font-family: monospace;
+}
+
+hr {
+	color: purple;
+}
+
+h3,h4{
+	font-family: sans-serif; 
+	color: lightblue;
+}
+
+p {
+	font-family: cursive;
+	color: white;
+	font-variant: unset;
+	text-align: justify;
+	text-transform: inherit;
+	letter-spacing: 0px;
+	word-spacing: 0px
+	text-decoration: line-through;
+}
+
+td tr table {
+	color: red;
+}
+
+

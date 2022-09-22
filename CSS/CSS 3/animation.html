@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<style type="text/css">
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+
+		}
+
+		.kotak:hover {
+			animation: animasiKotak 2s ease 2 alternate;
+
+		}
+
+		@keyframes animasiKotak {
+			0% {
+				width: 200px;
+
+			}
+			50% {
+				width: 500px;
+				height: 200px;
+			}
+			100% {
+				width: 500px;
+				height: 500px;
+			}
+		}
+		
+
+	</style>
+
+</head>
+<body>
+	<div class="kotak"></div>
+
+</body>
+</html>
+
+<!-- bisa dibuat dengan keyframe 
+
+@keyframe [name] {
+	from {
+	[property-css]
+	}
+
+	to {
+	[property-css]
+	}
+}
+
+nama animasinya harus sama, yg di keyframes atau di property animation, trs durasinya, lalu timing functionnya
+
+klo transition itu pergerakannya awal dan akhir sama, klo animation itu pergerakannya tergantung keyframe
+
+dari from to itu bisa diganti jadi 0% 50% atau 100%
+
+ada beberapa nilai yg dpt masuk properti animation
+
+animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state]
+
+iteraction count itu mau berapa kali diulang <angka> | <infinite>
+
+nilai animation bisa dipakai satu2
+
+direction, scr default berjalan dengan sangat normal | reverse | alternate ( berganti2 ) | alternate reverse ( gantian tp dimulai dr akhir )
+
+fill mode itu untuk menentukan akhir dari transisinya seperti apa 
+
+none | forwards | backwards | both 
+
+play-state untuk menjalankan atau berhenti 
+
+| inherit | initial | paused | running |
+

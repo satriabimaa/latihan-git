@@ -1,0 +1,20 @@
+/*Belajar mengenal text styling*/
+
+h1 {
+	font-style: 150px;
+	color: rgb(115,80,212);
+	text-decoration: line-through;
+	text-transform: lowercase;
+} 
+
+p {
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 4px;
+	word-spacing: 7px
+	
+
+}
+a {
+	text-decoration: none
+}

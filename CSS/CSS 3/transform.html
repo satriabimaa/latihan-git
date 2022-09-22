@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform</title>
+	<style type="">
+		p {
+			font-size: 20px;
+			text-align: center;
+		}
+		
+		/* 
+		scale(angka), scaleX(angka), scaleY(angka)
+		rotate(deg), rotateX(deg), rotateY(deg)
+		skew(deg), skewX(deg), skewY(deg)
+		translate(px), translateX(px), translateY(px)
+		*/
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			margin: 50px auto 0;
+			transition: 1s;
+		}
+
+		.kotak1{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			margin: 50px auto 0;
+			transition: 1s;
+		}
+
+		.kotak:hover {
+			transform: scale(1.5, 0.5) rotateY(90deg) skewY(30deg) translate(50px, 100px);
+		}
+
+		.kotak1:hover {
+			transform: scale(1.5, 0.5) rotate(360deg) translate(100px, 100px);
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="kotak"></div>
+	<div class="kotak 1"></div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</body>
+</html>
+
+<!-- Properti transform memungkinkan kita dapat memanipulasi format visual dari elemen html, 
+
+transformasi 2D dan 3D
+
+transform: <fungsi>;
+
+fungsinya :
+
+scale : memperbesar / memperkecil
+rotate : memutar
+
+( klo rotate aja sumbunya berputar di tengah, klo rotate x sumbunya secara horizontal memutar, klo rotate Y secara vertikal, bisa dipake sampe 360deg berputar searah jarum jam)
+
+skew : membuat condong / miring
+translate : mengubah posisi
+(tidak mempengaruhi elemen, lebih baik dari position)
+

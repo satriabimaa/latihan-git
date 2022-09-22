@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Shadow</title>
+	<style type="text/css">
+		div	{
+			width: 300px;
+			height: 300px;
+			background-color: #d7e3fc;
+			margin: 50px auto;
+			box-shadow: 5px 5px 10px 5px rgba(255,0,0,.5),
+			 -5px -5px 10px 5px rgba(0,0,255,.5);
+		}
+		div:hover {
+			box-shadow: 0px 80px 10px -40px rgba(0,0,0,.15);
+			margin-top: 40px;
+
+		}
+
+		img {
+			width: 200px;
+			height: 200px;
+			margin: 50px 50px 50px 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<div><img src="sh.png"></div 1>
+
+</body>
+</html>
+
+<!-- Box shadow digunakan untuk memberi bayangan pada elemen yang kita buat 
+
+- Property nya itu ada 6 nilai <x-offset> itu untuk mengatur jarak bayangan pada sumbu horizontal nilainya numerix (10px)
+	
+<inset> akan membuat bayangannya berada di dalam kotaknya bukan diluar
+
+<y-offset> itu untuk mengatur jarak bayangan pada sumbu horizontal nilainya numerix (10px)
+	
+<blur> seberapa besar blur yang kita kasih ke bayangannya
+
+<spread> seperti border, jika nilainya kecil akan ikutan kecil 
+			
+<color> mau warna apa bayangannya, jarang make warna solid biasanya make rgba
+
+<multiple shadow> bisa digunakan untuk membuat bayangan ganda dlm 1 bentuk
+-->

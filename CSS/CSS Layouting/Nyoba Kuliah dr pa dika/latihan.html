@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 1</title>
+	<style>
+
+		body {
+			height: 1000px;
+		}
+		.kotak1, .kotak2, .kotak3 {
+			width: 150px;
+			height: 150px;
+			margin: auto;
+			position: absolute;
+		}
+
+		.container {
+			width: 450px;
+			height: 450px;
+			border: 10px solid black;
+			margin: 50px  auto;
+			position: relative;
+		}
+
+		.kotak1 {
+
+			background-color: lightgreen;
+		}
+
+		.kotak2 {
+			background-color: violet;
+			top: 75px;
+			left: 75px;
+		}
+
+		.kotak3 {
+			background-color: tomato;
+			top: 150px;
+			left: 150px;
+		}
+
+		.topbar {
+			background-color: blue;
+			height: 50px;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			font-family: arial;
+			font-weight: bold;
+			text-align: center;
+			font-color: white;
+			line-height: 50px;
+
+		}
+
+		.iklan {
+			background-color: rgba(0,0,0,0.6);
+			position: fixed;
+			top: 100px;
+			bottom: 100px;
+			left: 100px;
+			right: 100px;
+		}
+
+		.close {
+			width: 30px;
+			height: 30px;
+			background-color: white;
+			font-family: arial;
+			border: 3px solid black;
+			text-align: center; 
+			line-height: 30px;
+			font-weight: bold;
+			position: absolute;
+			top: 87px;
+			right: 77px;
+			border-radius: 50%
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="kotak1"></div>
+		<div class="kotak2"></div>
+		<div class="kotak3"></div>
+	</div>
+
+	<div class="topbar">FACEBOOK</div>
+
+	<div class="iklan"></div>
+
+	<div class="close">X</div>
+
+
+
+
+</body>
+</html>

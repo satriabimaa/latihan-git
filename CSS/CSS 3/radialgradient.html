@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radial Gradient</title>
+	<style type="text/css">
+		div {
+			width: 500px;
+			height: 300px;
+			margin: 50px auto;
+			background-image: radial-gradient( circle farthest-side at bottom right, pink, violet, blue)
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+
+</body>
+</html>
+
+<!-- Sintaks sederhananya sama 
+	background-image: radial-gradient(<warna awal>, <warna akhir>);
+
+warna awal itu akan menjadi pusat lingkarannya 
+warma akhir itu yang menjadi bagian luar
+
+bisa make multiple color
+
+background-image: radial-gradient(<warna 1>, <warna 2>, ... , <warna-n>);
+
+bisa make color stop buat nentuin besarnya warna tsb
+
+background-image: radial-gradient( <warna-1> ( besar bobot warna ), <warna-2> ( besar bobot warna ), .... , <warna-n>);
+
+INI SINTAKS LENGKAPNYA 
+
+radial-gradient ( 
+<tipe> <jangkauan> at <posisi-y> <posisi-x>,
+<warna-1>, 
+<warna-2>,
+.........,
+<warna n>; 
+
+)
+
+<tipe> itu ada 2 ellipse dan circle, nah kalo <tipe> ini g ditulis bakalan ellipse hasilnya
+
+<jangkauan>
+
+1. closest-corner  : jarak dari pusat gradient ke sudut terdekat elemen
+2. closest-side    : jarak dari pusat gradient ke sisi terdekat elemen
+3. farthest-corner : jarak dari pusat gradient ke sudut terjauh elemen
+4. farthest-side   : jarak dari gradient ke sisi terjauh elemen
+
+fyi sudut terdekat sama terjauh itu sama aja (klo pusatnya di tengah)
+
+<posisi> memindahkan pusat gradien
+
+posisi-y top / center / bottom / bisa dlm px
+posisi-x left/ center / right / bisa dlm px
+
+
+
+--->
+
